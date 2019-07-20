@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bill Skidd (for Mike @ Zapier.com)</title>
+
+<script src="http://code.jquery.com/jquery.min.js"></script> 
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+
+	
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+	<link href='http://fonts.googleapis.com/css?family=Dancing+Script:700' rel='stylesheet' type='text/css'>
+
+<style>
+h1 {  font-family: 'Tangerine', serif;
+font-family: 'Dancing Script', cursive;
+  font-size: 38px;
+  text-shadow: 3px 3px 3px #CCCCDE;
+  font-weight: 700;
+  font-style: italic;
+  color: #19196C;
+  margin-top: 5px;
+  display: inline;
+  }
+  
+  h4 {
+  display: inline;
+  }
+
+
+</style>
+
+</head>
+
+<!--No, I don't usually use inline styles and scripts in production apps...only resumes ;-) -->
+<body style="background-color: #c5d6ef;">
+
+
+
+<div class="container">
+<div class="row ">
+        <div class="col-md-12">
+  
+  <div style="text-align:center"> 
+  <br>
+<h1 style="font: Dancing Script">Example Powerpoint Mock-up ...for Mike</h1>
+<br>
+  
+  <video id="video1" width="1024">
+    <source src="http://www.collins-funeral.com/dev/Arranger.Demo.mp4" type="video/mp4">
+    Sorry Mike, your browser does not support HTML5 video.
+  </video><br>
+  <button class="btn btn-success" onclick="playPause()">Play/Pause</button> 
+  <button class="btn btn-primary" onclick="makeSmall()">Small</button>
+  <button class="btn btn-info" onclick="makeNormal()">Normal</button>
+  <button class="btn btn-primary" onclick="makeBig()">Big</button>
+  <br> 
+</div> 
+
+<script> 
+var myVideo = document.getElementById("video1"); 
+
+function playPause() { 
+    if (myVideo.paused) 
+        myVideo.play(); 
+    else 
+        myVideo.pause(); 
+} 
+
+function makeBig() { 
+    myVideo.width = 1024; 
+} 
+
+function makeSmall() { 
+    myVideo.width = 320; 
+} 
+
+function makeNormal() { 
+    myVideo.width = 640; 
+} 
+</script> 
+</div>
+</div> <!--end row -->
+</div>
+</body>

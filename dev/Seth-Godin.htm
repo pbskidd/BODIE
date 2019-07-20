@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bill Skidd (for Seth)</title>
+
+<script src="http://code.jquery.com/jquery.min.js"></script> 
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+
+	
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+	<link href='http://fonts.googleapis.com/css?family=Dancing+Script:700' rel='stylesheet' type='text/css'>
+
+<style>
+h1 {  font-family: 'Tangerine', serif;
+font-family: 'Dancing Script', cursive;
+  font-size: 38px;
+  text-shadow: 3px 3px 3px #CCCCDE;
+  font-weight: 700;
+  font-style: italic;
+  color: #19196C;
+  margin-top: 5px;
+  display: inline;
+  }
+  
+  h4 {
+  display: inline;
+  }
+
+
+</style>
+
+</head>
+
+<!--No, I don't usually use inline styles and scripts in production apps...only resumes ;-) -->
+<body style="background-color: #EBEBFF;">
+
+
+
+<div class="container">
+<div class="row ">
+        <div class="col-md-12">
+  
+  <div style="text-align:center; font-size: 150%;"> 
+  <br>
+<h1 style="font: Dancing Script">My Example PowerPoint ...for Seth's Critique.</h1>
+<br><br><p style="text-align:left">This PowerPoint presentation (video), accompanies a verbal pitch for a funeral arrangement app.</p>
+<ul>
+<li style="text-align:left">The funeral industry is already $10 billion/yr with an additional $10 billion in related purchases AND an expected 75% increase in volume over the next 5 years.</li><li style="text-align:left">Few vendors actively support the funeral industry and its current level of technology makes your "Bad PowerPoint" examples look good.</li></ul><br>
+<p style="text-align:left"><strong>I'm in the Tim Ferriss, #BuildaBiz, Shopify competition.  Please wish me luck! I would love to chat at Necker Island!<strong></p>
+
+<p>My Shopify Store: <a href="http://memorialhelpers.com">MemorialHelpers.com</a>     My LinkedIn: <a href="https://www.linkedin.com/profile/view?id=145007958&trk=nav_responsive_tab_profile">Bill Skidd</a></p>
+
+  
+  <video id="video1" width="1024">
+    <source src="http://www.collins-funeral.com/dev/Arranger.Demo.mp4" type="video/mp4">
+    Sorry Mike, your browser does not support HTML5 video.
+  </video><br>
+  <button class="btn btn-success" onclick="playPause()">Play/Pause</button> 
+  <button class="btn btn-primary" onclick="makeSmall()">Small</button>
+  <button class="btn btn-info" onclick="makeNormal()">Normal</button>
+  <button class="btn btn-primary" onclick="makeBig()">Big</button>
+  <br> 
+</div> 
+
+<script> 
+var myVideo = document.getElementById("video1"); 
+
+function playPause() { 
+    if (myVideo.paused) 
+        myVideo.play(); 
+    else 
+        myVideo.pause(); 
+} 
+
+function makeBig() { 
+    myVideo.width = 1024; 
+} 
+
+function makeSmall() { 
+    myVideo.width = 320; 
+} 
+
+function makeNormal() { 
+    myVideo.width = 640; 
+} 
+</script> 
+</div>
+</div> <!--end row -->
+</div>
+</body>
